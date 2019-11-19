@@ -1,7 +1,7 @@
-def calculator():
+def main():
     while(True):
         validation = False
-        while validation == False:
+        while (not validation):
             try:
                 num1 = float(input("Enter a number: "))
                 validation = True
@@ -9,7 +9,7 @@ def calculator():
                 print("Invalid Input")
                 continue
         validation = False
-        while validation == False:
+        while (not validation):
             try:
                 num2 = float(input("Enter another number: "))
                 validation = True
@@ -56,4 +56,4 @@ def mod(a, b):
     print(a, "/", b, " leaves remainder ", a%b)
 
 if __name__ == "__main__":
-    calculator()
+    main()
