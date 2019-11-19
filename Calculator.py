@@ -30,8 +30,7 @@ def calculator():
         else:
             print("Invalid operator")
             continue
-        repeat = input("Another calculation? y/n: ")
-        repeat = repeat.lower()
+        repeat = input("Another calculation? y/n: ").lower()
         if(repeat == "y"):
             continue
         elif(repeat == "n"):
